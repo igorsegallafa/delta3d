@@ -1,6 +1,6 @@
 # Delta3D
 
-Project of a basic Game Engine that I created for learn 3D stuff. The library was made using Directx9 with Shaders and C++.
+Project of a basic Game Engine that I created for learn 3D stuff. The library was made using Directx9 with Shaders and C++ 17.
 
 ## License
 Licensed under the MIT License.
