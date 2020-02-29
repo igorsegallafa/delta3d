@@ -247,9 +247,7 @@ IDirect3DTexture9* TextureFactory::CreateTextureFromFile( const std::string& fil
 				Math::Color colorKey( 0.0f, 0.0f, 0.0f, 0.0f );
 
 				//Decrypt Images Firstly
-				if( _strnicmp( ext.c_str(), ".png", ext.length() ) == 0 )
-					loadTexture = DecryptPNG( fileBuffer, (unsigned int)fileSize );
-				else if( _strnicmp( ext.c_str(), ".bmp", ext.length() ) == 0 )
+				if( _strnicmp( ext.c_str(), ".bmp", ext.length() ) == 0 )
 				{
 					loadTexture = DecryptBMP( fileBuffer, (unsigned int)fileSize );
 					colorKey = Math::Color( 0.0f, 0.0f, 0.0f, 1.0f );
